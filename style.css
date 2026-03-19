@@ -1,0 +1,323 @@
+* {
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+body {
+    font-family: "Poppins", sans-serif;
+}
+
+main {
+    margin-top: 15%;
+}
+
+button {
+    cursor: pointer;
+}
+
+body.dark {
+    background-color: #121212;
+    color: white;
+}
+
+body.dark .nav-horizontal {
+    background-color: #1e1e1e;
+}
+
+body.dark .nav-vertical {
+    background-color: #1e1e1e;
+}
+
+body.dark a,
+body.dark h1 {
+    color: white;
+}
+body.dark .design {
+    color: #994111;
+}
+body.dark .resultado {
+    color: #1b3a63;
+}
+
+body.dark .card-form {
+    background-color: #5c5c5c;
+}
+
+body.dark #objetivo {
+    background-color: #1b3a63;
+}
+
+body.dark .btn-form {
+    background-color: #994111;
+}
+
+body.dark #basico {
+    background-color: #5c5c5c;
+}
+
+body.dark #profissional {
+    background-color: #994111;
+}
+
+body.dark #premium {
+    background-color: #1b3a63;
+}
+
+#mudar-tema {
+    position: absolute;
+    right: 20px;
+    top: 20px;
+
+    background: none;
+    border: none;
+    font-size: 20px;
+    cursor: pointer;
+
+    transition: transform 0.10s ease;
+}
+#mudar-tema:active {
+    transform: rotate(180deg);
+}
+
+.cor-fundo {
+    background-color: #d9d9d9;
+}
+
+.cor-uteis {
+    color: #1962c4;
+    color: #fc6716;
+}
+
+#logo-convert {
+    height: 300px;
+    width: 300px;
+}
+#logo-index {
+    margin-left: 40%;
+}
+#text-index {
+    margin-left: 40%;
+}
+
+.nav-vertical {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 220px;
+    height: 50vh;
+    background-color: #d9d9d9;
+    padding: 20px;
+    border-radius: 20px;
+}
+
+.nav-vertical ul {
+    list-style: none;
+    padding: 0;
+}
+
+.nav-vertical a {
+    text-decoration: none;
+    color: black;
+    font-size: 16px;
+    display: block;
+    margin: 10px;
+}
+
+
+
+.nav-horizontal {
+    position: fixed;
+    top: 0;
+
+
+    width: 100%;
+    height: 170px;
+
+    background-color: #d9d9d9;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    padding: 0 30px;
+    box-sizing: border-box;
+    border-radius: 20px;
+}
+
+.nav-center {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.nav-center h1 {
+    font-family: "Poppins", sans-serif;
+    font-size: 30px;
+    left: 50%;
+    font-style: italic;
+    text-decoration: none;
+    color: black;
+}
+
+.nav-right {
+    display: flex;
+    gap: 10px;
+
+}
+
+.nav-right img {
+    width: 35px;
+    cursor: pointer;
+}
+.design {
+    color: #fc6716;
+}
+.resultado {
+    color: #1962c4;
+}
+
+
+.nav-center-page-secao {
+    left: 50%;
+    display: flex;
+    font-size: 150%;
+    list-style: none;
+}
+
+.nav-center-page-secao a {
+    text-decoration: none;
+    margin: 30px;
+}
+
+.nav-center-page-secao a {
+    color: black;
+    display: flex;
+    padding: auto;
+}
+
+.nav-left img {
+    width: 180px;
+    height: 180px;
+}
+
+.planos {
+    display: flex;
+    justify-content: space-evenly;
+    gap: 30px;
+}
+
+.cards {
+    width: 250px;
+
+    border-radius: 20px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    cursor: pointer;
+}
+
+#basico {
+    background-color: #d9d9d9;
+}
+
+#profissional {
+    background-color: #fc6716
+}
+
+#premium {
+    background-color: #1962c4;
+}
+
+strong {
+    font-size: 30px;
+}
+
+.card-form {
+    width: 350px;
+    height: 500px;
+    border-radius: 20px;
+    text-align: center;
+    display: block;
+    flex-direction: column;
+    background-color: #d9d9d9;
+}
+
+.form {
+    margin-left: 37%;
+}
+
+#nome,
+#whats,
+#profissao {
+    border-radius: 20px;
+    border: none;
+    height: 30px;
+    width: 280px;
+
+}
+
+#objetivo {
+    border-radius: 20px;
+    border: none;
+    height: 30px;
+    background-color: #1962c4;
+    width: 280px;
+    height: 80px;
+}
+
+input:focus {
+    outline: none;
+}
+
+.btn-form {
+    color: black;
+    background-color: #fc6716;
+    border-radius: 20px;
+    border: none;
+    width: 250px;
+    height: 40px;
+    margin-left: 10px;
+    margin-top: 30px;
+}
+
+
+@media (max-width: 768px) {
+
+    .nav-horizontal {
+        height: 100px;
+        padding: 0 15px;
+        justify-content: space-between;
+    }
+
+    .nav-center {
+        position: static;
+        transform: none;
+        display: none;
+    }
+
+    .nav-center h1 {
+        font-size: 20px;
+    }
+
+    .nav-vertical {
+        display: none;
+    }
+
+    main {
+        margin-top: 120px;
+        margin-left: 0;
+        padding: 10px;
+    }
+
+    .nav-right {
+        gap: 5px;
+    }
+
+    #toggle-theme {
+        font-size: 16px;
+    }
+
+    .nav-right img {
+        width: 25px;
+    }
+}
