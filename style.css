@@ -7,7 +7,12 @@ body {
 }
 
 main {
-    margin-top: 15%;
+    margin-top: 180px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
 
 button {
@@ -31,9 +36,11 @@ body.dark a,
 body.dark h1 {
     color: white;
 }
+
 body.dark .design {
     color: #994111;
 }
+
 body.dark .resultado {
     color: #1b3a63;
 }
@@ -65,12 +72,15 @@ body.dark #premium {
 body.dark .p1-secao {
     background-color: #994111;
 }
+
 body.dark .p2-secao {
     background-color: #1b3a63;
 }
+
 body.dark .p3-secao {
     background-color: #994111;
 }
+
 body.dark .p4-secao {
     background-color: #1b3a63;
 }
@@ -87,6 +97,7 @@ body.dark .p4-secao {
 
     transition: transform 0.10s ease;
 }
+
 #mudar-tema:active {
     transform: rotate(180deg);
 }
@@ -104,11 +115,14 @@ body.dark .p4-secao {
     height: 300px;
     width: 300px;
 }
+
 #logo-index {
-    margin-left: 40%;
+    margin: 0;
 }
+
 #text-index {
-    margin-left: 40%;
+    margin: 0;
+    text-align: center;
 }
 
 .nav-vertical {
@@ -181,47 +195,52 @@ body.dark .p4-secao {
     width: 35px;
     cursor: pointer;
 }
+
 .design {
     color: #fc6716;
 }
+
 .resultado {
     color: #1962c4;
 }
 
+.sec-secao {
+    width: 100%;
+    max-width: 800px;
+    padding: 20px;
+
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
 
 .p1-secao {
     background-color: #fc6716;
-    border-radius: 20px;
-    text-align: center;
-    display: flex;
-    flex-direction: column;
 }
+
 .p2-secao {
     background-color: #1962c4;
-    border-radius: 20px;
-    text-align: center;
-    display: flex;
-    flex-direction: column;
 }
+
 .p3-secao {
     background-color: #fc6716;
-    border-radius: 20px;
-    text-align: center;
-    display: flex;
-    flex-direction: column;
-    width: 70%;
-    height: 60%;
-    margin-left: 15%;
 }
+
 .p4-secao {
     background-color: #1962c4;
+}
+
+.p1-secao,
+.p2-secao,
+.p3-secao,
+.p4-secao {
     border-radius: 20px;
     text-align: center;
+
     display: flex;
     flex-direction: column;
-    width: 70%;
-    height: 60%;
-    margin-left: 15%;
+
+    padding: 20px;
 }
 
 
@@ -250,12 +269,16 @@ body.dark .p4-secao {
 
 .planos {
     display: flex;
-    justify-content: space-evenly;
     gap: 30px;
+    justify-content: center;
+
+    flex-wrap: wrap;
+    padding: 20px;
 }
 
 .cards {
     width: 250px;
+    min-height: 250px;
 
     border-radius: 20px;
     text-align: center;
@@ -282,9 +305,11 @@ strong {
 }
 
 .card-form {
-    width: 350px;
+    width: 100%;
+    max-width: 350px;
     height: 500px;
     border-radius: 20px;
+    padding: 20px;
     text-align: center;
     display: block;
     flex-direction: column;
@@ -292,7 +317,11 @@ strong {
 }
 
 .form {
-    margin-left: 37%;
+    margin-top: 180px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 #nome,
@@ -332,6 +361,37 @@ input:focus {
 
 @media (max-width: 768px) {
 
+    #logo-convert {
+        width: 200px;
+        height: 200px;
+    }
+
+    #text-index h3 {
+        font-size: 18px;
+        padding: 0 10px;
+    }
+
+    .sec-secao {
+        padding: 10px;
+    }
+
+    .p1-secao,
+    .p2-secao,
+    .p3-secao,
+    .p4-secao {
+        font-size: 14px;
+    }
+
+    .planos {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .cards {
+        width: 90%;
+        max-width: 300px;
+    }
+
     .nav-horizontal {
         height: 100px;
         padding: 0 15px;
@@ -368,5 +428,22 @@ input:focus {
 
     .nav-right img {
         width: 25px;
+    }
+
+    .form {
+        margin-top: 120px;
+        padding: 10px;
+    }
+
+    .card-form {
+        width: 100%;
+        max-width: 300px;
+    }
+
+    #nome,
+    #whats,
+    #profissao,
+    #objetivo {
+        width: 100%;
     }
 }
